@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "directories": { "lib": "wwwroot/"}, //Burası önemli node_modules altından wwwroot taşıyıp bu satırı eklememiz gerekli. 21. Madde için
+  "devDependencies": {
+    "jquery": "3.5.0",
+    "bootstrap": "4.4.1"
+  }
+}
+//Yüklenenleri node_modules klasöründen wwwroot klasörüne taşımak gerekiyor sanırım :D 

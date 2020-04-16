@@ -1,0 +1,49 @@
+﻿@page
+@model AspNetCoreMvc2.Introduction.Pages.ParameterPage.IndxModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Parameter</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Parameters)
+            {
+                <tr>
+
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                    <td>@item.Description</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+    <form method="post">
+        <label asp-for="Parameter.Key"></label><input asp-for="Parameter.Key" /> <br />
+        <label asp-for="Parameter.Value"></label><input asp-for="Parameter.Value" /> <br />
+        <label asp-for="Parameter.Description"></label><input asp-for="Parameter.Description" /> <br />
+        <input type="submit" name="name" value="Kaydet" />
+    </form>
+
+</body>
+</html>

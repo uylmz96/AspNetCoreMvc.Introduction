@@ -1,0 +1,80 @@
+﻿@model AspNetCoreMvc2.Introduction.DataSource.Models.EmployeeViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RazorDemo</title>
+</head>
+<body>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>LastName</th>
+                <th>CityId</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Employees)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.LastName</td>
+                    <td>@item.CityId</td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>Desinged by Umut Yılmaz @DateTime.Now.Year</p>
+
+
+    İf
+    @{
+        var t = true;
+        if (t)
+        {
+            <p>If Bloğu Test</p>
+        }
+    }
+
+    For
+    @for (int i = 0; i < 3; i++)
+    {
+        <b>For Bloğu Test / </b>
+    }
+
+    Try-Catch
+    @try
+    {
+
+    }
+    catch (Exception)
+    {
+
+        throw;
+    }
+
+    Using
+    @using (Html.BeginForm())
+    {
+        <input type="text" name="name" value="" />
+        <button type="submit">Gönder</button>
+    }
+</body>
+</html>

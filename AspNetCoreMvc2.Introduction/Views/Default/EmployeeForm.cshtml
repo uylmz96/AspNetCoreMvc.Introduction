@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeForm</title>
+</head>
+<body>
+    @using (Html.BeginForm("Index7","Default"))
+    {
+        <b>Key  :   </b>
+        @Html.TextBox("key")
+        <input type="submit" name="name" value="Search" />
+    }
+</body>
+</html>
