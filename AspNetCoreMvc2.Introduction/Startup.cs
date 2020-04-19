@@ -85,6 +85,8 @@ namespace AspNetCoreMvc2.Introduction
         {
             routeBuilder.MapRoute("Default", "{controller=Default}/{action=Index2}/{Id?}");
             routeBuilder.MapRoute("MyRoute", "Engin/{controller=Default}/{action=Index3}/{Id?}");
+            routeBuilder.MapRoute(name: "areas",template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+         );
 
         }
     }
