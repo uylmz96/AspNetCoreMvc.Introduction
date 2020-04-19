@@ -29,8 +29,8 @@ namespace AspNetCoreMvc2.Introduction
             //UY-200412
             //Madde 25 DbContext'e connectionstring tanımlama
             var connectionString = "Data Source=mssql07.turhost.com;Initial Catalog=UylmzDB;Persist Security Info=True;User ID=uylmz96;Password=Umut5546@";
-            services.AddDbContext<UylmzDbContext>(options=>options.UseSqlServer(connectionString));
-            
+            services.AddDbContext<UylmzDbContext>(options => options.UseSqlServer(connectionString));
+
             //UY-200412
             //Madde 22 nin hangi yöntem ile çalışacağını belirtiyoruz.
             //Yani ICalculator çağırılırsa Calculator18 üret demiş olduk.
@@ -43,6 +43,10 @@ namespace AspNetCoreMvc2.Introduction
             //Scoped 1 tane üretir ve ikisine de aynı referansı tanımlar
             //Transient da ise 2 nesne içinde 2 tane farklı nesne üretilir ve farklı referanslarda olmuş olurlar
             services.AddTransient<ICalculator, Calculator18>();
+
+            //Session
+            services.AddSession();
+            services.AddDistributedMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +57,7 @@ namespace AspNetCoreMvc2.Introduction
             env.EnvironmentName = Microsoft.AspNetCore.Hosting.EnvironmentName.Development;
             //Eğer Production seçili ise son kullanıcıya alınan exception gösterilmeyecektir.
             env.EnvironmentName = Microsoft.AspNetCore.Hosting.EnvironmentName.Production;
-            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -69,9 +73,13 @@ namespace AspNetCoreMvc2.Introduction
             //Route yapısı Controller/Action
             //app.UseMvcWithDefaultRoute(); //Default route yapısı için yazılabilir
 
+            app.UseSession();
+
+
             //UY-200407
             app.UseMvc(configureRoutes);
         }
+
 
         private void configureRoutes(IRouteBuilder routeBuilder)
         {
