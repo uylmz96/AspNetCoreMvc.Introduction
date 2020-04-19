@@ -1,0 +1,7 @@
+﻿@model AspNetCoreMvc2.Introduction.DataSources.Models.ParameterListViewModel
+
+@foreach (var item in Model.Parameters)
+{
+    <br />
+    @String.Format("{0} - {1}", item.Key, item.Value)
+}

@@ -172,3 +172,8 @@ C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduct
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.dll
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.pdb
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.genruntimeconfig.cache
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.csprojAssemblyReference.cache
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ParameterList\Default.cshtml.g.cs
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Common\Index.cshtml.g.cs
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Shared\DivideByZeroError.cshtml.g.cs

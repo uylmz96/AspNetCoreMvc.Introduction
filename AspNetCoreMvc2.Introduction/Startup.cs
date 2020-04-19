@@ -49,9 +49,21 @@ namespace AspNetCoreMvc2.Introduction
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseStaticFiles();
+            //Eğer Development seçili ise developer için exception page gösterilecektir.
+            env.EnvironmentName = Microsoft.AspNetCore.Hosting.EnvironmentName.Development;
+            //Eğer Production seçili ise son kullanıcıya alınan exception gösterilmeyecektir.
+            env.EnvironmentName = Microsoft.AspNetCore.Hosting.EnvironmentName.Production;
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                //Eğer exception alınırsa bunun son kullanıcıya anlamlı şekilde gösterilmesi için yapılması gereken işlem.
+                //CommonController içerisinde bir hata sayfasına gidecek.
+                //.Net Core ile gelen yöntem
+                app.UseExceptionHandler("/error");
             }
             //UY-200405
             //Route yapısı Controller/Action

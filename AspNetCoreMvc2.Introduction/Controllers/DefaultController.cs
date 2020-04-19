@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Threading.Tasks;
 using AspNetCoreMvc2.Introduction.DataSource.Entities;
 using AspNetCoreMvc2.Introduction.DataSource.Models;
+using AspNetCoreMvc2.Introduction.Filters;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreMvc2.Introduction.Controllers
@@ -16,8 +18,14 @@ namespace AspNetCoreMvc2.Introduction.Controllers
             return "Hello World! -Uylmz96";
         }
 
+        [Route("~/Index")]
+        [HandleException(ViewName ="DivideByZeroError",ExceptionType =typeof(DivideByZeroException))]
+        [HandleException(ViewName = "Error", ExceptionType = typeof(SecurityException))]
         public IActionResult Index2()
         {
+            //Attribute olarak içeride alınabilecek exceptiontype a göre farklı bir viewa gitmek için attribute de belirtmiştik.
+            throw new SecurityException(); 
+            throw new DivideByZeroException("Some Exception occured!");
             ViewBag.Message = "Hello View! -Uylmz96";
             return View();
         }
