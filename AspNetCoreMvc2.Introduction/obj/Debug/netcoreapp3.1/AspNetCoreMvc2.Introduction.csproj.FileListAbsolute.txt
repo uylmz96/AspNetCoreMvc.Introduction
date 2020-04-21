@@ -139,8 +139,6 @@ C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduct
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.csproj.CoreCompileInputs.cache
-C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.RazorAssemblyInfo.cache
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.RazorAssemblyInfo.cs
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\AspNetCoreMvc2.Introduction.AssemblyInfoInputs.cache
