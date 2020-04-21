@@ -177,3 +177,4 @@ C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduct
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Common\Index.cshtml.g.cs
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Views\Shared\DivideByZeroError.cshtml.g.cs
+C:\Users\uylmz\source\repos\AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
