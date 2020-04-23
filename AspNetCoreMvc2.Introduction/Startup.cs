@@ -35,11 +35,12 @@ namespace AspNetCoreMvc2.Introduction
             //UY-200412
             //Madde 25 DbContext'e connectionstring tanımlama
             services.AddDbContext<UylmzDbContext>(options => options.UseSqlServer(_configuration["DbConnection"]));
-            
+
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(_configuration["DbConnection"]));
             services.AddIdentity<AppIdentityUser, AppIdentityRole>()
-                .AddEntityFrameworkStores<AppIdentityDbContext>()
-                .AddDefaultTokenProviders();
-            services.Configure<IdentityOptions>(options => 
+                    .AddEntityFrameworkStores<AppIdentityDbContext>()
+                    .AddDefaultTokenProviders();
+            services.Configure<IdentityOptions>(options =>
             {
                 //Password Options
                 options.Password.RequireDigit = true;
@@ -115,7 +116,7 @@ namespace AspNetCoreMvc2.Introduction
         {
             routeBuilder.MapRoute("Default", "{controller=Default}/{action=Index2}/{Id?}");
             routeBuilder.MapRoute("MyRoute", "Engin/{controller=Default}/{action=Index3}/{Id?}");
-            routeBuilder.MapRoute(name: "areas",template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+            routeBuilder.MapRoute(name: "areas", template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
          );
 
         }

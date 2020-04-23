@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreMvc2.Introduction", "AspNetCoreMvc2.Introduction\AspNetCoreMvc2.Introduction.csproj", "{39781320-075B-40E7-BF0C-6B75796F8940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWithAngular", "AspNetCoreWithAngular\AspNetCoreWithAngular.csproj", "{400C9457-AF94-42E5-B0AE-043BC53B10B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWithAngular", "AspNetCoreWithAngular\AspNetCoreWithAngular.csproj", "{400C9457-AF94-42E5-B0AE-043BC53B10B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWithVue", "AspNetCoreWithVue\AspNetCoreWithVue.csproj", "{AAD3E7FD-AFA6-4845-B842-FCE2B9F08A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{400C9457-AF94-42E5-B0AE-043BC53B10B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{400C9457-AF94-42E5-B0AE-043BC53B10B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{400C9457-AF94-42E5-B0AE-043BC53B10B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD3E7FD-AFA6-4845-B842-FCE2B9F08A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD3E7FD-AFA6-4845-B842-FCE2B9F08A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD3E7FD-AFA6-4845-B842-FCE2B9F08A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD3E7FD-AFA6-4845-B842-FCE2B9F08A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
